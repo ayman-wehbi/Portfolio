@@ -1,50 +1,115 @@
-<html>
-	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
-		
-		<title>Ayman</title>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="styles/bootstrap.min.css">
-		<link rel="stylesheet" href="styles/bootstrap-icons.css">
-		<link href='styles/styles.css' rel="stylesheet">
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+    
+    <title>Ayman</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+    
+    
+</head>
 
-	<body style="background-color: #183153">
-		<div class="container">
-		<button class="ripple" id="hbutton" type="button" onclick="document.location='index.html'">
-				<i class="bi bi-house"></i> Home
-			</button>
+<body style="background-color: #183153">
+    <nav class="navbar navbar-default" role="navigation" style="background-color: #183153;">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-house-fill" style="color: white;"></i>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-envelope-fill" style="color: white;"></i>
+                </a>
+                <a class a href="index.html" class="navbar-brand">
+                    <i class="bi bi-person-circle" style="color: white;"></i>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-github" style="color: white;"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
 
-		<div style="border-radius: 20px" class="card card-4">
-			<p id="parag2"> I am Ayman Wehbi. I was born in Lebanon, and moved here when I was eleven years old with my family. I got into technology right around that time after I held my first smartphone, which was the Galaxy S1. Shortly after, I began creating youtube videos about tinkering with my smartphone and gathered around 500k veiws in total. My creative process did not stop there, as I got into music production during my highschool years, right before diving into computer science for college major. Creating content in any field is a passion to me, and I look forward to create in this field as I continue to learn.   </p>
-		</div>
-		<div style="border-radius: 20px" class="card card-1">
-			<img  style="border-radius: 20px; position: left;" class='img-thumbnail square w-50' src="assets/pic.jpg">
-			<p id="parag"> Ayman Wehbi <br> 23 Years Old <br> Uni. of New Orleans <br> Computer Science </p>
-		</div>
-		
-		<div style="border-radius: 20px" class="card card-2">
-			<h2 class='display-7'>Skills:</h2>
-			<div class="d-flex row row-cols-4">
-			<img src='assets/icon-java.png'>
-			<img src='assets/icon-js.png'>
-			<img src='assets/icon-html5.png'>
-			<img src='assets/icon-css3.png'>
-			<img src='assets/icon-react.png'>
-			<img src='assets/icon-mongodb.png'>
-			<img src='assets/icon-node.webp'>
-			<img src='assets/icon-npm.png'>
-			<img src='assets/icon-passport.png'>
-			<img src='assets/icon-socketio.png'>
-			</div>
-		</div>
-		</div>
-		<div style="border-radius: 20px" class="card card-3">
-			<p id="parag2"> I am a proffesional at procrastinating and doing work at 5AM. Just like I am right now. </p>
-		</div>
+    <main class="container text-center" id="content">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="card">
+                    <h4>Fact #1</h4>
+                    <p>Born in Beirut, Lebanon, I migrated to the US at the age of ten.</p>
+                </div>
+                <div class="card" style="margin-top: 20px;">
+                    <h4>Fact #3</h4>
+                    <p>Between ages 11-14, I totaled roughly 480,000 views across two tech-based YouTube channels.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #5</h4>
+                    <p>I lead all four group projects in during my time in college.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #7</h4>
+                    <p>In one of the projects, a member decided to not show up to a single meeting or put in any work. We had most meetings on tuesday nights, but they could not show up due to it being thier "Dungeon and Dragons night"</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #9</h4>
+                    <p>In our algorithms group project, our team of three could not achieve our complete goal for the project, so other two members decided to not show up for the presentation. I ended up presenting on my own of what we achieved practically, and the rest conceptually and theoritacally.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #11</h4>
+                    <p>The most fun I ever had was leading those projects. I deemed the work to be succesful.</p>
+                </div>
+            </div>
+			
+            <div class="col-lg-6 col-md-3">
+                <div class="card">
+                    <img src="assets/pic.jpg" alt="Ayman Wehbi">
+                    <h1>Ayman Wehbi</h1>
+                    <h4>Software Engineer</h4>
+                    <p>At 12 years old, my Galaxy S smartphone stopped receiving software updates due to Samsung’s policy, but being fascinated with tech, I could not believe that this relatively powerful device could not simply run the newer version of Android, and could not afford to upgrade my hardware to do so. So I started looking for answers until I stumbled upon rooting, custom ROMs, and custom kernels. No different than the feeling of a pilot finding treasure, I started tinkering with my device right away, until I got to the latest version of Android at the time, and prolonged my device’s software-update life for an extra two years.
 
+                    <p>This intrigue carried onto today, 12 years later, creating my own software and delivering it to a world where my goal is to help users and make their lives easier. My work on Nico Studios is targeted to help songwriters, and with Polygons to help users create a personal videogame portfolio. I aspire to do nothing but leave an impact on any creations that I work on with others, or invent and engineer myself.
+                    </p>
+                    <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Languages</h4>
+                    <h5>Java, JavaScript, React Native, Python, C++, Node.js, HTML, CSS</h5>
+                </div>
+            </div>
+			<div class="col-sm-6 col-md-3">
+                <div class="card" >
+                    <h4>Fact #2</h4>
+                    <p>Between ages 15-18, I totaled roughly 50,000 streams on original music that I composed, wrote, produced, and performed.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #4</h4>
+                    <p>After succesfully debugging code, I celebrate like soccer players after they score. This is due to the stressful nature of debugging and the sense of achievement afterwards.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #6</h4>
+                    <p>My Jak: HTML project is a love letter to the Jak & Daxter series. It was my first time writing HTML/CSS/JavaScript.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #8</h4>
+                    <p>MKBHD is the reason I quit youtube at 14.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #10</h4>
+                    <p>Programming the jumping mechanic for Nico Strife took about five hours alone, after various and numerous attempts to get the perfect height, drop-speed, and momentum response.</p>
+                </div>
+				<div class="card" style="margin-top: 20px;">
+                    <h4>Fact #12</h4>
+                    <p>I started cooking to fulfill my cravings, and now I look forward to cooking more than eating the food itself.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

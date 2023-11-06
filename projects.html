@@ -1,101 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="icon" href="assets/favicon.png">
-<title>Ayman</title>
-<!-- Required meta tags -->
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Bootstrap CSS -->
-
-<link rel="stylesheet" href="styles/bootstrap.min.css">
-<link rel="stylesheet" href="styles/bootstrap-icons.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+    <title>Ayman</title>
 </head>
+<body style="background-color: #183153">
+    <!-- Navigation Bar -->
+    <div class="container">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <!-- Home icon with white color -->
+                    <i class="bi bi-house-fill" style="color: white;"></i>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <!-- Envelope icon with white color -->
+                    <i class="bi bi-envelope-fill" style="color: white;"></i>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <!-- Person circle icon with white color -->
+                    <i class="bi bi-person-circle" style="color: white;"></i>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                    <!-- GitHub icon with white color -->
+                    <i class="bi bi-github" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <!-- Button with an icon for Project 1 -->
+                            <button type="button" class="btn btn-default navbar-btn">
+                                <i class="bi bi-box"></i> Project 1
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- Button with an icon for Project 2 -->
+                            <button type="button" class="btn btn-default navbar-btn">
+                                <i class="bi bi-folder"></i> Project 2
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- Button with an icon for Project 3 -->
+                            <button type="button" class="btn btn-default navbar-btn">
+                                <i class="bi bi-gear"></i> Project 3
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<body  style="background-color: #183153">
-	<!--Navbar-->
-		<button class="ripple" id="hbutton" type="button" onclick="document.location='index.html'">
-				<i class="bi bi-house"></i> Home
-			</button>
-	<!--Coding Projects Portfolio-->
-	<div class="container">
-		<h1 style="color: White" class="display-1 mt-7">
-			Major Projects
-		</h1>
-	<hr>
-	<div class="card-group gap-2">
-	<!-- START: Card 1 -->
-	<div style="border-radius: 3%;" class="card bg-light text-center">
-		<div class="card-img-top">
-			<img style="border-radius: 3%; height: 90%; border-width: 0px;margin-top: 3%; " class="img-fluid" src="assets/Polygons.PNG">
-		</div>
-	<div class="card-body">
-		<h3 class="card-title">Polygons</h3>
-			<p class="card-text">
-				Polygons is an under-contruction website where gamers review video games and rate them out of 5 stars
-			</p>
-	</div>
-	<div class="card-footer">
-		<small  class="text-muted">HTML, CSS, JS</small>
-			<button style="background-color: #183153; color: white;" type="button" class="btn btn-primary float-end" onclick="document.location='code.html'"> See More</button>
-	</div>
-	</div>
-	<!-- END:Card 1 -->
+    <!-- Major Projects Section -->
+    <div class="container">
+        <h1 style="color: White" class="display-1 mt-7">
+            Major Projects
+        </h1>
+        <hr>
+        <div class="card-group gap-2">
+            <!-- START: Card 1 (Polygons) -->
+            <div style="border-radius: 3%;" class="card bg-light text-center">
+                <div class="card-img-top">
+                    <img style="border-radius: 3%; height: 90%; border-width: 0px; margin-top: 3%;" class="img-fluid" src="assets/Polygons.PNG">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Polygons</h3>
+                    <p class="card-text">
+                        Polygons is an under-construction website where gamers review video games and rate them out of 5 stars.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">HTML, CSS, JS</small>
+                    <button style="background-color: #183153; color: white;" type="button" class="btn btn-primary float-end" onclick="document.location='code.html'">See More</button>
+                </div>
+            </div>
+            <!-- END: Card 1 (Polygons) -->
 
-	<!-- START: Card 2 -->
-	<div style="border-radius: 3%;" class="card bg-light text-center">
-		<div class="card-img-top">
-			<img style="border-radius: 3%; height: 90%; border-width: 0px;margin-top: 3%; " class="img-fluid" src="assets/studios.PNG">
-		</div>
-	<div class="card-body">
-		<h3 class="card-title">Nico Studios</h3>
-			<p class="card-text">
-				Nico Studios is a mobile application dedicated for songwriters to organize the lyrics of their songs neatly.
-			</p>
-	</div>
-	<div class="card-footer">
-		<small  class="text-muted">React Native, JS</small>
-		<button style="background-color: #183153; color: white; text-decoration: none;" type="button" class="btn btn-primary float-end">
-			<a style="text-decoration: none; color: white;" href="https://github.com/ayman-wehbi/nico-studios"> See More</a>
-		</button>
-	</div>
-	</div>
-	<!-- END:Card 1 -->
-	
-	<!-- START:Card 2 -->
-	<div style="border-radius: 3%;" class="card bg-light text-center">
-	<div class="card-img-top">
-		<img style="border-radius: 3%; height: 90%; border-width: 0px;margin-top: 3%; " class="img-fluid" src="assets/nico.png">
-	</div>
-	<div class="card-body">
-		<h3 class="card-title">Nico Strife</h3>
-			<p class="card-text">
-				A platformer-shooter game where the player takes on the lucid dreams of Nico Strife.
-			</p>
-	</div>
-	
-	<div class="card-footer">
-		<small class="text-muted">Godot Engine, GD Scripting</small>
-		<button style="background-color: #183153; color: white; text-decoration: none;" type="button" class="btn btn-primary float-end">
-			<a style="text-decoration: none; color: white;" href="https://github.com/ayman-wehbi/nico-strife"> See More</a>
-		</button>
-	</div>
-	</div>
-	<!-- END:Card 2 -->
-	</div>
-	<!-- END:Card Group -->
-	</div>
+            <!-- START: Card 2 (Nico Studios) -->
+            <div style="border-radius: 3%;" class="card bg-light text-center">
+                <div class="card-img-top">
+                    <img style="border-radius: 3%; height: 90%; border-width: 0px; margin-top: 3%;" class="img-fluid" src="assets/studios.PNG">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Nico Studios</h3>
+                    <p class="card-text">
+                        Nico Studios is a mobile application dedicated for songwriters to organize the lyrics of their songs neatly.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">React Native, JavaScript</small>
+                    <button style="background-color: #183153; color: white; text-decoration: none;" type="button" class="btn btn-primary float-end">
+                        <a style="text-decoration: none; color: white;" href="https://github.com/ayman-wehbi/nico-studios">See More</a>
+                    </button>
+                </div>
+            </div>
+            <!-- END: Card 2 (Nico Studios) -->
 
-	<div class="container">
-		<h1 style="color: White" class="display-1 mt-7">
-			Other Projects
-		</h1>
-	</div>
-	
+            <!-- START: Card 3 (Nico Strife) -->
+            <div style="border-radius: 3%;" class="card bg-light text-center">
+                <div class="card-img-top">
+                    <img style="border-radius: 3%; height: 90%; border-width: 0px; margin-top: 3%;" class="img-fluid" src="assets/nico.png">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Nico Strife</h3>
+                    <p class="card-text">
+                        A platformer-shooter game where the player takes on the lucid dreams of Nico Strife.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Godot Scripting</small>
+                    <button style="background-color: #183153; color: white; text-decoration: none;" type="button" class="btn btn-primary float-end">
+                        <a style="text-decoration: none; color: white;" href="https://github.com/ayman-wehbi/nico-strife">See More</a>
+                    </button>
+                </div>
+            </div>
+            <!-- END: Card 3 (Nico Strife) -->
+        </div>
+        <!-- END: Card Group -->
+    </div>
 
-	
+    <!-- Other Projects Section -->
+    <div class="container">
+        <h1 style="color: White" class="display-1 mt-7">
+            Other Projects
+        </h1>
+        <div class="container">
+            <hr>
+            <div class="card-group gap-2">
+                <!-- START: Card 1 (Server-Client Chat Application) -->
+                <div style="border-radius: 3%;" class="card bg-light text-center">
+                    <div class="card-img-top">
+                        <img style="border-radius: 3%; height: 90%; border-width: 0px; margin-top: 3%;" class="img-fluid" src="assets/client.jpeg">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Server-Client Chat Application</h3>
+                        <p class="card-text">
+                            This is a multithreaded socket chat program.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Java</small>
+                        <button style="background-color: #183153; color: white;" type="button" class="btn btn-primary float-end" onclick="document.location='code.html'">See More</button>
+                    </div>
+                </div>
+                <!-- END: Card 1 (Server-Client Chat Application) -->
 
-	
-<!-- Bootstrap Bundle with Popper -->
-<script src="scripts/bootstrap.bundle.min.js"></script>
+                <!-- START: Card 2 (Jak: HTML) -->
+                <div style="border-radius: 3%;" class="card bg-light text-center">
+                    <div class="card-img-top">
+                        <img style="border-radius: 3%; height: 95%; border-width: 0px; margin-top: 3%;" class="img-fluid" src="assets/JAK.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Jak: HTML</h3>
+                        <p class="card-text">
+                            Text-based HTML game to demonstrate basic UI capabilities.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">HTML, CSS, JS</small>
+                        <button style="background-color: #183153; color: white; text-decoration: none;" type="button" class="btn btn-primary float-end">
+                            <a style="text-decoration: none; color: white;" href="https://github.com/ayman-wehbi/JakHTML">See More</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- END: Card 2 (Jak: HTML) -->
+
+                <!-- START: Card 3 (Mark Smin) -->
+                <div style="border-radius: 3%;" class="card bg-light text-center">
+                    <div class="card-img-top">
+                        <img style="border-radius: 3%; height: 90%; border-width: 0px; margin-top: 3%;" class="img-fluid" src="assets/nico.png">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mark Smin</h3>
+                        <p class="card-text">
+                            An arcade shooter game.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Godot Scripting</small>
+                        <button style="background-color: #183153; color: white; text-decoration: none;" type="button" class="btn btn-primary float-end">
+                            <a style="text-decoration: none; color: white;" href="https://github.com/ayman-wehbi/mark-smin">See More</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- END: Card 3 (Mark Smin) -->
+            </div>
+            <!-- END: Card Group -->
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
+</html>

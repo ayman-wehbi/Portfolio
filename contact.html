@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ayman</title>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="styles/bootstrap.min.css">
-		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+<head>
+    <title>Ayman</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+</head>
+<body style="background-color: #183153">
+    <button class="ripple" id="hbutton" type="button" onclick="document.location='index.html'">
+        <i class="bi bi-house"></i> Home
+    </button>
 
-	</head>
-	<body style="background-color: #183153">
-			<button class="ripple" id="hbutton" type="button" onclick="document.location='index.html'">
-				<i class="bi bi-house"></i> Home
-			</button>
-
-		<!--Contact Form-->
-		<div class="container mt-4">
-		<h1 class="display-1">
-			<i class="bi bi-envelope"></i> Contact
-		</h1>
-		<hr>
-		<form>
-			<div class="form-group mb-3">
-				<label>Name:</label>
-					<input type="text" id="name" placeholder="Name">
-				</div>
-			<div class="form-group mb-3">
-		
-				<label>Email:</label>
-		
-				<input type="email" id="email" placeholder="Email">
-		
-			</div>
-		
-			<div class="form-group mb-3">
-				<label>Subject:</label>
-					<input type="subject" id="subject" placeholder="Subject">
-			</div>
-			<div class="form-group mb-3">
-				<label>Message:</label>
-				<textarea  class="form-control" rows="4" id="message" placeholder="Message"> </textarea>
-			</div>
-			<button class='btn btn-primary float-end' type="submit"> Submit </button>
-		</form>
-		</div>
-		<!-- Bootstrap Bundle with Popper -->
-		<script src="scripts/bootstrap.bundle.min.js"></script>
-	</body>
+    <!-- Contact Form -->
+    <div class="container mt-4">
+        <h1 class="display-1" style="color: white;">
+            <i class="bi bi-envelope" style="color: white;"></i> Contact
+        </h1>
+        <hr>
+        <form method="post" action="contact.php">
+            <div class="form-group mb-3" style="color: white;">
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="form-group mb-3" style="color: white;">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group mb-3" style="color: white;">
+                <label>Subject:</label>
+                <input type="subject" name="subject" placeholder="Subject">
+            </div>
+            <div class="form-group mb-3" style="color: white;">
+                <label>Message:</label>
+                <textarea class="form-control" rows="4" name="message" placeholder="Message"></textarea>
+            </div>
+            <button class='btn btn-primary float-end' type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
 </html>
