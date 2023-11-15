@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Preconnect links for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts stylesheet for a custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+
+    <title>Ayman</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS and custom stylesheets -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #183153;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Smooch Sans', sans-serif;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #183153;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Main content container */
+        main {
+            padding: 20px;
+        }
+
+        /* Profile Information */
+        .profile-card {
+            display: flex;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .profile-image {
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+
+        .profile-image img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .profile-text {
+            flex: 0 0 60%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            color: black;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: black;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Languages */
+        h4 {
+            color: black;
+            margin-top: 20px;
+        }
+
+        h5 {
+            color: black;
+            font-size: 18px;
+        }
+
+        /* FACTS Section */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Fact Cards */
+    
+
+        @media only screen and (max-width: 767px) {
+            /* Profile Information */
+            .profile-card {
+                flex-direction: column;
+            }
+
+            .profile-image,
+            .profile-text {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            /* Languages */
+            h4 {
+                margin-top: 10px;
+            }
+
+            h5 {
+                font-size: 14px;
+            }
+
+            /* FACTS Section */
+            .fact-card {
+            flex: 0 0 100%;
+            margin-bottom: 1px; /* Add margin to create even spaces between cards */
+        }
+        }
+    </style>
+</head>
+
+<body style="background-color: #183153">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-default" role="navigation" style="background-color: #183153;">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Links to different pages with icons and labels -->
+                <a class="navbar-brand" href="index.html" style="color: white; font-size: 14px;">
+                    <i class="bi bi-house-fill" style="color: white;"></i> Home
+                </a>
+                <a class="navbar-brand" href="projects.html" style="color: white; font-size: 14px;">
+                    <i class="bi bi-file-earmark-code-fill" style="color: white;"></i> Projects
+                </a>
+                <a class="navbar-brand" href="https://github.com/ayman-wehbi" style="color: white; font-size: 14px;">
+                    <i class="bi bi-github" style="color: white;"></i> GitHub
+                </a>
+                <a class="navbar-brand" href="contact.html" style="color: white; font-size: 14px;">
+                    <i class="bi bi-envelope-fill" style="color: white;"></i> Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content container -->
+    <main class="container text-center" id="content">
+        <div class="row">
+            <!-- Column 2 - Profile Information -->
+            <div class="col-lg-12 col-md-10">
+                <div class="card profile-card">
+                    <div class="profile-image">
+                        <img src="assets/pic.jpg" alt="Ayman Wehbi">
+                    </div>
+                    <div class="profile-text">
+                        <h1>Ayman Wehbi</h1>
+                        <h4>Software Engineer</h4>
+                        <p>At 12 years old, my Galaxy S smartphone stopped receiving software updates due to Samsung’s policy, but being fascinated with tech, I could not believe that this relatively powerful device could not simply run the newer version of Android. So I started looking for answers until I stumbled upon rooting, custom ROMs, and custom kernels. No different than the feeling of a pilot finding treasure, I started tinkering with my device right away, until I got to the latest version of Android at the time, and prolonged my device’s software-update life for an extra two years.</p>
+                        <p>This intrigue carried onto today, creating my own software and delivering it to a world where my goal is to help users and make their lives easier. My work on Nico Studios is targeted to help songwriters, and with Polygons to help users create a personal video game portfolio. I aspire to do nothing but leave an impact on any creations that I work on with others, or invent and engineer myself.</p>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 20px;">
+                    <h4>Languages</h4>
+                    <h5>Java, JavaScript, React Native, Python, C++, Node.js, HTML, CSS</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- FACTS Section -->
+        <div class="row" style="padding-top: 20px;">
+            <!-- Fact #1 -->
+            <div class="fact-card">
+                <div class="card align-self-start">
+                    <p>Born in Beirut, Lebanon, I migrated to the US at the age of ten.</p>
+                </div>
+            </div>
+
+            <!-- Fact #3 -->
+            <div class="fact-card">
+                <div class="card align-self-start">
+                    <p>Between ages 11-14, I totaled roughly 480,000 views across two tech-based YouTube channels.</p>
+                </div>
+            </div>
+
+            <!-- Fact #4 -->
+            <div class="fact-card">
+                <div class="card">
+                    <p>My Jak: HTML project is a love letter to the Jak & Daxter series. It was my first time writing HTML/CSS/JavaScript.</p>
+                </div>
+            </div>
+
+            <!-- Fact #5 -->
+            <div class="fact-card">
+                <div class="card align-self-start">
+                    <p>I lead all four group projects during my time in college.</p>
+                </div>
+            </div>
+
+            <!-- Fact #6 -->
+            <div class="fact-card">
+                <div class="card align-self-start">
+                    <p>The goal is to eventually proffesionally lead projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 20px;">
+            <!-- Fact #7 -->
+            <div class="fact-card">
+                <div class="card">
+                    <p>I got my first job at 18 years old at Loyola University, where I was tasked to served as an ambassador for Loyola University by connecting with alumni students, for feedback on the college experience and acquire donations towards the college funds. I enojoyed the team-oriented environment and conversations I had with alumni.</p>
+                </div>
+            </div>
+
+            <!-- Fact #10 -->
+            <div class="fact-card">
+                <div class="card">
+                    <p>Programming the jumping mechanic for Nico Strife took about five hours alone, after various and numerous attempts to get the perfect height, drop-speed, and momentum response. This event was a lesson of thinking outside the box.</p>
+                </div>
+            </div>
+
+            <!-- Fact #2 -->
+            <div class="fact-card">
+                <div class="card align-self-start">
+                    <p>My second job was fitting room position at Ross: Dress for Less. Cannot say that was my most thrilling time, but learned greatly about proffesionally forming relationships with colleagues and the importance of an organized space.</p>
+                </div>
+            </div>
+
+            <!-- Fact #8 -->
+            <div class="fact-card">
+                <div class="card align-self-start">
+                    <p>Between the ages of 15-18, I totaled roughly 50,000 streams of original self-composed, written, and produceed music. This was my main hobby from 2015 to 2019, which formed out of my interest in software after tinkering with FL Studio.</p>
+                </div>
+            </div>
+
+            <!-- Fact #9 -->
+            <div class="fact-card">
+                <div class="card">
+                    <p>I got my third job at the age of 20 at Lowe's Home Improvement. It was my most difficult challenge in the working space yet as it involved plenty of tasks, including hitting sales targets, ensuring customers were satisfied with their purchase decisions, and collaborating with associates to maintain the appliances floor's presentability.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 10px;">
+            <!-- Empty space, you can add more content here if needed -->
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

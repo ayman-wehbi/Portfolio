@@ -36,6 +36,7 @@
             font-size: 60px; /* Increase main header font size */
             font-family: "Brush Script MT", cursive; /* Change font to cursive */
             color: white; /* Change font color */
+            text-align: center; /* Center the sub-header text */
         }
 
         .sub-header {
@@ -80,10 +81,51 @@
         } 
 
         /* Style for anchor tags within buttons */
+        
         .button a {
             text-decoration: none;
             color: inherit;
             border-radius: 10px;
+        }
+        @media only screen and (max-width: 767px) {
+            body {
+            background: #183153;
+          
+        }
+        .button-container {
+                position: relative;
+                top: auto;
+                transform: translateX(50%); /* Center horizontally */
+                left: 20%;
+                margin-top: 20px;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .button {
+            background-color: transparent;
+            border-radius: 10px;
+            border: none;
+            transform: translateX(-10%); /* Center horizontally */
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-align: left;
+            color: white;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s; /* Smooth hover transition */
+        }
+
+            .main-header,
+            .sub-header {
+                font-size: 40px;
+            }
+
+            .button {
+                width: 100%;
+            }
         }
     </style>
 </head>
